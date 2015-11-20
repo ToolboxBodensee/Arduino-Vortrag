@@ -3,8 +3,8 @@ byte helligkeit;
 
 //Initialisierungsfunktion, die aufgerufen wird wenn das Board neu startet
 void setup() {
-  //Pin-2 als Output setzten
-  pinMode(2, OUTPUT);
+  //Pin-5 als Output setzten
+  pinMode(5, OUTPUT);
 
   //Variable Helligkeit wird zu begin auf 0 gesetzt
   helligkeit = 0
@@ -21,8 +21,8 @@ void loop() {
     helligkeit = 0;
   }
 
-  //Helligkeitswert auf Pin-2 anwenden
-  analogWrite(2, helligkeit);
+  //Helligkeitswert auf Pin-5 anwenden
+  analogWrite(5, helligkeit);
 
   //Verzögerung für 20ms (0.02 sek)
   delay(20);
